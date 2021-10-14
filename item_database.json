@@ -1,93 +1,38 @@
 {
-  "version" : "1",
-
-  "health_booster_1" : {
-    "ID" : 1,
-    "Name" : "health booster 1",
-    "Cost" : 50,
-    "AbilitySpecial" : {
-      "health_bonus" : 100
-    }
-  },
-
-  "health_booster_2" : {
-    "ID" : 2,
-    "Name" : "health booster 2",
-    "Cost" : 75,
-    "AbilitySpecial" : {
-      "health_bonus" : 150
-    }
-  },
-
-  "health_booster_3" : {
-    "ID" : 3,
-    "Name" : "health booster 3",
-    "Cost" : 125,
-    "AbilitySpecial" : {
-      "health_bonus" : 250
-    }
-  },
-
-  "health_booster_4" : {
-    "ID" : 4,
-    "Name" : "health booster 4",
-    "Cost" : 150,
-    "AbilitySpecial" : {
-      "health_bonus" : 300
-    }
-  },
-
-  "health_booster_5" : {
-    "ID" : 5,
-    "Name" : "health booster 5",
-    "Cost" : 255,
-    "AbilitySpecial" : {
-      "health_bonus" : 450
-    }
-  },
-
-  "health_booster_6" : {
-    "ID" : 6,
-    "Name" : "health booster 6",
-    "Cost" : 250,
-    "AbilitySpecial" : {
-      "health_bonus" : 500
-    }
-  },
-
-  "health_booster_7" : {
-    "ID" : 7,
-    "Name" : "health booster 7",
-    "Cost" : 425,
-    "AbilitySpecial" : {
-      "health_bonus" : 850
-    }
-  },
-
-  "health_booster_8" : {
-    "ID" : 8,
-    "Name" : "health booster 8",
-    "Cost" : 775,
-    "AbilitySpecial" : {
-      "health_bonus" : 1550
-    }
-  },
-
-  "health_booster_9" : {
-    "ID" : 9,
-    "Name" : "health booster 9",
-    "Cost" : 1050,
-    "AbilitySpecial" : {
-      "health_bonus" : 2100
-    }
-  },
-
-  "health_booster_10" : {
-    "ID" : 10,
-    "Name" : "health booster 10",
-    "Cost" : 1900,
-    "AbilitySpecial" : {
-      "health_bonus" : 3800
+  "version": "1",
+  
+  "item_health_booster_1": {
+    "ID": "5000",
+    "BaseClass": "item_datadriven",
+    "Name": "health booster 1",
+    
+    "AbilityBehavior": "ABILITY_BEHAVIOR_IMMEDIATE | ABILITY_BEHAVIOR_NO_TARGET",
+    
+    "ItemCost": "50",
+    "ItemStackable": "0",
+    "ItemPermanent": "0",
+    "ItemCastOnPickup": "1",
+    "ItemInitialCharges": "1",
+    "ItemDroppable": "0",
+    "ItemSellable": "0",
+    "ItemBaseLevel": "1",
+    "MaxUpgradeLevel": "10",
+    "UpgradeByPurchase": "1",
+    
+    "OnSpellStart":{
+      "ApplyModifier": {
+        "ModifierName":"HealthModifier",
+        "Target": "CASTER"
+      }
+    },
+    
+    "Modifiers": {
+      "HealthModifier": {
+        "IsPurgable": "0",
+        "Properties": {
+          "MODIFIER_PROPERTY_HEALTH_BONUS": "100"
+        }
+      }
     }
   }
 }
