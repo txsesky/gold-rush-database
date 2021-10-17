@@ -1,12 +1,9 @@
 {
   "version": "1",
-  
   "item_base": {
     "BaseClass": "item",
     "Model": "models/props_gameplay/treasure_chest.asset",
-
     "FightRecapLevel": "0",
-    
     "AbilityBehavior": "ABILITY_BEHAVIOR_PASSIVE",
     "AbilityUnitTargetType": "UNIT_TARGET_NONE",
     "AbilityUnitTargetTeam": "UNIT_TARGET_TEAM_NONE",
@@ -14,7 +11,6 @@
     "AbilityCastPoint": "0.0",
     "AbilityCooldown": "0.0",
     "AbilityManaCost": "0",
-
     "ItemCost": "0",
     "ItemStackable": "0",
     "ItemPermanent": "0",
@@ -32,7 +28,6 @@
     "ItemSupport": "0",
     "ItemKillable": "0",
     "ItemContributesToNetWorthWhenDropped": "0",
-    
     "ItemShopTags": "",
     "ItemQuality": "common",
     "ItemPurchasable": "0",
@@ -41,150 +36,13 @@
     "ItemRequirements": [
       ""
     ],
-    
     "UIPickupSound": "Item.PickUpRingShop",
     "UIDropSound": "Item.DropRingShop",
     "WorldDropSound": "Item.DropRingWorld"
   },
-  
-  "item_health_booster": {
-    "ID": "5000",
-    "BaseClass": "item",
-    "Name": "health booster",
-    
-    "AbilityBehavior": "IMMEDIATE | NO_TARGET",
-    
-    "ItemCost": "50 75 125 150 225 250 425 775 1050 1900",
-    "ItemStackable": "0",
-    "ItemPermanent": "0",
-    "ItemCastOnPickup": "1",
-    "ItemInitialCharges": "1",
-    "ItemDroppable": "0",
-    "ItemSellable": "0",
-    "ItemBaseLevel": "1",
-    "ItemMaxLevel": "10",
-    "ItemUpgradableInShop": "1",
-    
-    "OnSpellStart": {
-      "ApplyModifier": {
-        "ModifierName": "HealthModifier",
-        "Duration": "-1",
-        "Target": "CASTER"
-      }
-    },
-    
-    "Modifiers": {
-      "HealthModifier": {
-        "IsPurgable": "0",
-        "AttachEffect": {
-          "EffectName": "particles/stat_buff.asset",
-          "EffectAttachType": "follow_origin",
-          "Target": "CASTER"
-        },
-        
-        "Properties": {
-          "HEALTH_BONUS": "100 150 250 300 450 500 850 1550 2100 3800"
-        }
-      }
+  "items": [
+    {
+     
     }
-  },
-
-  "item_movespeed_booster": {
-    "ID": "5100",
-    "BaseClass": "item",
-    "Name": "movespeed booster",
-
-    "AbilityBehavior": "ABILITY_BEHAVIOR_IMMEDIATE | ABILITY_BEHAVIOR_NO_TARGET",
-
-    "ItemCost": "10 15 23 35 53 80 120 180 270 405",
-    "ItemStackable": "0",
-    "ItemPermanent": "0",
-    "ItemCastOnPickup": "1",
-    "ItemInitialCharges": "1",
-    "ItemDroppable": "0",
-    "ItemSellable": "0",
-    "ItemBaseLevel": "1",
-    "ItemMaxLevel": "10",
-    "ItemUpgradableInShop": "1",
-
-    "OnSpellStart": {
-      "ApplyModifier": {
-        "ModifierName": "MovespeedModifier",
-        "Duration": "-1",
-        "Target": "CASTER"
-      }
-    },
-
-    "Modifiers": {
-      "MovespeedModifier": {
-        "IsPurgable": "0",
-        "AttachEffect": {
-          "EffectName": "particles/stat_buff.asset",
-          "EffectAttachType": "follow_origin",
-          "Target": "CASTER"
-        },
-        
-        "Properties": {
-          "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT": "4 8 12 16 20 24 28 32 36 40"
-        }
-      }
-    }
-  },
-
-  "item_one_ring": {
-    "ID": "7777",
-    "BaseClass": "item",
-    "Name": "one ring",
-
-    "AbilityBehavior": "IMMEDIATE | NO_TARGET | PASSIVE",
-
-    "ItemCost": "10 15 23 35 53 80 120 180 270 405",
-    "ItemStackable": "0",
-    "ItemPermanent": "1",
-    "ItemCastOnPickup": "1",
-    "ItemInitialCharges": "1",
-    "ItemDroppable": "0",
-    "ItemSellable": "0",
-    "ItemBaseLevel": "1",
-    "ItemMaxLevel": "10",
-    "ItemUpgradableInShop": "1",
-
-    "OnSpellStart": {
-      "ApplyModifier": {
-        "ModifierName": "MovespeedModifier",
-        "Duration": "-1",
-        "Target": "CASTER"
-      }
-    },
-
-    "Modifiers": {
-      "MovespeedModifier": {
-        "IsPurgable": "0",
-        "AttachEffect": {
-          "EffectName": "particles/stat_buff.asset",
-          "EffectAttachType": "follow_origin",
-          "Target": "CASTER"
-        },
-
-        "Properties": {
-          "MOVESPEED_BONUS_CONSTANT": "4 8 12 16 20 24 28 32 36 40",
-          "HEALTH_BONUS": "4 8 12 16 20 24 28 32 36 40"
-        },
-
-        "MovespeedModifier": {
-          "IsPurgable": "0",
-          "AttachEffect": {
-            "EffectName": "particles/one_ring_aura.asset",
-            "EffectAttachType": "follow_origin",
-            "Target": "CASTER"
-          },
-
-          "Properties": {
-            "MOVESPEED_BONUS_CONSTANT": "4 8 12 16 20 24 28 32 36 40",
-            "HEALTH_REGEN_CONSTANT": "4 8 12 16 20 24 28 32 36 40"
-          }
-      }
-    }
-  }
-
+  ]
 }
