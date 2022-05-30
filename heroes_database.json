@@ -1,14 +1,32 @@
 {
-  "version" : "1",
-  
-  "hero_dwarf":{
-    "BaseClass": "hero",
-    "Model": "models/heroes/antimage/antimage.mdl",
-    "AttackDamage": "1d2+27",
-    "AttackSpeed": "100",
-    "AttackRange": "1",
-    "MovementSpeed": "315",
-    "Health": "150",
-    "HealthRegen": "0.25"
-  }
+  "version": "1",
+
+  "heroes": [
+    {
+      "NameID": "hero_explorer",
+      "Prefab": "Prefabs/Heroes/Explorer",
+      "SoundSet": "",
+      "HeroID": "1",
+      "Enabled": "1",
+      "HeroUnloockOrder": "1",
+      "HertoGlowColor": "120 64 148",
+
+      "AttackCapabilities": "UNIT_CAP_MELEE_ATTACK",
+      "AttackDamage": "",
+      "AttackSpeed": "",
+      "AttackRange": "",
+      "AttackAnimationPoint": "",
+
+      "MovementSpeed": "315",
+      "MovementTurnRate": "0.5",
+
+      "Health": "150",
+      "HealthRegen": "0.25",
+
+      "Ability1": "",
+      
+      "BoundsHullName": "HULL_SIZE_HERO",
+      "HealthBarOffset": "140"
+    }
+  ]
 }
