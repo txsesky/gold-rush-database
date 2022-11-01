@@ -17,7 +17,7 @@
       "AttackRange": "",
       "AttackAnimationPoint": "",
 
-      "MovementSpeed": "315",
+      "MovementSpeed": "1",
       "MovementTurnRate": "0.5",
 
       "Health": "150",
