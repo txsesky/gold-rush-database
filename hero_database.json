@@ -9,7 +9,7 @@
       "HeroID": "1",
       "Enabled": "1",
       "HeroUnloockOrder": "1",
-      "HertoGlowColor": "120 64 148",
+      "HeroGlowColor": "120 64 148",
 
       "AttackCapabilities": "UNIT_CAP_MELEE_ATTACK",
       "AttackDamage": "",
