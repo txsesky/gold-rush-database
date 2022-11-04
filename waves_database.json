@@ -1,0 +1,29 @@
+{
+  "version": "1",
+
+  "waves": [
+    {
+      "NameID": "wave1",
+      "WaveCount": "1",
+      "WaitTime": "10",
+      "Units":[
+        {
+          "NameId":"melee1",
+          "SpawnCount":"4",
+          "SpawnPoint":"center-right"
+        },
+        {
+          "NameId":"range1",
+          "SpawnCount":"2",
+          "SpawnPoint":"center-left"
+        },
+        {
+          "NameId":"boss1",
+          "SpawnCount":"1",
+          "SpawnPoint":"center-left",
+          "SpawnDelay":"10"
+        }
+      ]
+    }
+  ]
+}

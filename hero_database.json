@@ -8,7 +8,7 @@
       "SoundSet": "",
       "HeroID": "1",
       "Enabled": "1",
-      "HeroUnloockOrder": "1",
+      "HeroUnlockOrder": "1",
       "HeroGlowColor": "120 64 148",
 
       "AttackCapabilities": "UNIT_CAP_MELEE_ATTACK",
