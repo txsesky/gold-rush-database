@@ -1,27 +1,43 @@
 {
   "version": "1",
-
   "waves": [
     {
-      "NameID": "wave1",
-      "WaveCount": "1",
-      "WaitTime": "10",
-      "Units":[
+      "waitTime": 10,
+      "subwaves": [
         {
-          "NameId":"melee1",
-          "SpawnCount":"4",
-          "SpawnPoint":"center-right"
+          "waitTime": 0,
+          "units": [
+            {
+              "nameId": "melee1",
+              "amount": 4,
+              "portalId": "center-right"
+            },
+            {
+              "nameId": "range1",
+              "amount": 2,
+              "portalId": "center-left"
+            }
+          ]
         },
         {
-          "NameId":"range1",
-          "SpawnCount":"2",
-          "SpawnPoint":"center-left"
+          "waitTime": 5,
+          "units": [
+            {
+              "NameId": "boss1",
+              "Amount": 1,
+              "PortalId": "center"
+            }
+          ]
         },
         {
-          "NameId":"boss1",
-          "SpawnCount":"1",
-          "SpawnPoint":"center-left",
-          "SpawnDelay":"10"
+          "waitTime": 8,
+          "units": [
+            {
+              "NameId": "melee1",
+              "Amount": 4,
+              "PortalId": "center"
+            }
+          ]
         }
       ]
     }
