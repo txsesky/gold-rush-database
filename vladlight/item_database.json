@@ -1,0 +1,23 @@
+{
+  "Items": [
+    {
+      "Id": "tiger_boots",
+      "Name": "Tiger Boots",
+      "Description": "+50% MS",
+      "Cost": 250,
+      "Modifiers": [
+        { "StatType": "MoveSpeed", "ModType": "Percent", "Value": 0.5 }
+      ]
+    },
+    {
+      "Id": "hod_cap",
+      "Name": "Hod Cap",
+      "Description" : "+100 HP, -20% MS",
+      "Cost": 300,
+      "Modifiers": [
+        { "StatType": "Health", "ModType": "Flat", "Value": 100 },
+        { "StatType": "MoveSpeed", "ModType": "Percent", "Value": -0.2 }
+      ]
+    }
+  ]
+}
