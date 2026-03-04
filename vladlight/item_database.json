@@ -1,22 +1,99 @@
 {
   "Items": [
     {
-      "Id": "tiger_boots",
+      "Id": "boots_tiger",
       "Name": "Tiger Boots",
-      "Description": "+50% MS",
+      "Description": "+20% MS",
+      "Type": "Equipment",
+      "Tags": [
+        "boots"
+      ],
       "Cost": 250,
       "Modifiers": [
-        { "StatType": "MoveSpeed", "ModType": "Percent", "Value": 0.5 }
+        {
+          "StatType": "MoveSpeed",
+          "ModType": "Percent",
+          "Value": 0.2
+        }
+      ]
+    },
+    {
+      "Id": "boots_cheetah",
+      "Name": "Cheetah Boots",
+      "Description": "+50% MS",
+      "Type": "Equipment",
+      "Tags": [
+        "boots"
+      ],
+      "Cost": 450,
+      "Modifiers": [
+        {
+          "StatType": "MoveSpeed",
+          "ModType": "Percent",
+          "Value": 0.5
+        }
       ]
     },
     {
       "Id": "hod_cap",
       "Name": "Hod Cap",
-      "Description" : "+100 HP, -20% MS",
+      "Description": "+100 HP, -20% MS",
+      "Type": "Equipment",
+      "Tags": [],
       "Cost": 300,
       "Modifiers": [
-        { "StatType": "Health", "ModType": "Flat", "Value": 100 },
-        { "StatType": "MoveSpeed", "ModType": "Percent", "Value": -0.2 }
+        {
+          "StatType": "Health",
+          "ModType": "Flat",
+          "Value": 100
+        },
+        {
+          "StatType": "MoveSpeed",
+          "ModType": "Percent",
+          "Value": -0.2
+        }
+      ]
+    },
+    {
+      "Id": "fuel_can",
+      "Name": "Lantern Fuel",
+      "Description": "+50 Fuel",
+      "Type": "Consumable",
+      "Tags": [],
+      "Cost": 200,
+      "Effects": [
+        {
+          "StatType": "Fuel",
+          "Value": 50
+        }
+      ]
+    },
+    {
+      "Id": "book_health",
+      "Name": "Health Tract",
+      "Description": "Permanent +10 HP",
+      "Type": "Permanent",
+      "Tags": [],
+      "Cost": 200,
+      "Effects": [
+        {
+          "StatType": "Health",
+          "Value": 10
+        }
+      ]
+    },
+    {
+      "Id": "potion_heal",
+      "Name": "Heal Potion",
+      "Description": "+50 HP",
+      "Type": "Consumable",
+      "Tags": [],
+      "Cost": 100,
+      "Effects": [
+        {
+          "StatType": "Health",
+          "Value": 50
+        }
       ]
     }
   ]
